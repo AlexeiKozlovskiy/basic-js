@@ -21,7 +21,7 @@ function createDreamTeam(members) {
   
     if(typeof members[i] === 'string') {
 
-      arr.push(members[i][0].toUpperCase());
+      arr.push(members[i].replace(/\s/g, '')[0].toUpperCase());
 
     }
     // console.log(arr)
